@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><UseWindowsForms>true</UseWindowsForms><ImplicitUsings>disable</ImplicitUsings></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../src/ScanOnWin.Core/ScanOnWin.Core.csproj" /></ItemGroup>
+  <ItemGroup><PackageReference Include="PdfPig" Version="0.1.11" /></ItemGroup>
+  <ItemGroup><Content Include="../../assets/tessdata/*.traineddata" Link="tessdata/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
+</Project>

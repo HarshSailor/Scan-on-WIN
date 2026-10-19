@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="../../assets/native/win32/twaindsm.dll" Link="_win32/twaindsm.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../assets/native/win64/twaindsm.dll" Link="_win64/twaindsm.dll" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="NAPS2.Sdk" Version="1.3.0" />
+    <PackageReference Include="NAPS2.Images.Gdi" Version="1.3.0" />
+    <PackageReference Include="NAPS2.Sdk.Worker.Win32" Version="1.3.0" />
+    <PackageReference Include="NAPS2.Tesseract.Binaries" Version="1.4.0" />
+  </ItemGroup>
+</Project>
